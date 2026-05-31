@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ئایە رازیت لەگەڵ من بیت❤️🙂</title>
+    <style>
+ body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #e6d2de, #d4a5c7, #b76e9c);
+}
+
+.container {
+    text-align: center;
+    background: rgba(131, 53, 92, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yesBtn:hover {
+    transform: scale(1.1);
+}
+
+#yesBtn {
+    background: #4CAF50;
+    color: white;
+}
+
+#noBtn {
+    background: #f44336;
+    color: white;
+    position: absolute;
+    left: 170px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="question">ئایە رازیت لەگەڵ من بیت❤️🙂</h1>
+        <div class="btn-container">
+            <button id="yesBtn" onclick="agreed()">بەڵێ🥰</button>
+            <button id="noBtn" onmouseover="runAway()" onclick="runAway()">نەخێر😭</button>
+        </div>
+    </div>
+
+    <script>
+        function runAway() {
+            const noBtn = document.getElementById('noBtn');
+            
+            // Generate random coordinates within the screen boundaries
+            const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+            const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+            
+            // Switch to fixed positioning to move anywhere on screen
+            noBtn.style.position = 'fixed';
+            noBtn.style.left = x + 'px';
+            noBtn.style.top = y + 'px';
+        }
+
+        function agreed() {
+            document.getElementById('question').innerText = "ئاوا بە قسەی خۆش 🥰✨";
+            document.getElementById('yesBtn').style.display = 'none';
+            document.getElementById('noBtn').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
