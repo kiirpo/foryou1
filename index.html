@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>❤️🙂!ئایە رازیت لەگەڵ هیوا بیت</title>
+    <title>هدی من خۆش ئەوەێ!🙃</title>
     <style>
  body {
     font-family: Arial, sans-serif;
@@ -17,41 +17,7 @@
 
     background: linear-gradient(135deg, #e6d2de, #d4a5c7, #b76e9c);
 }
-<div class="container">
 
-    <img src="mrbean.gif" width="180" style="border-radius:15px;">
-
-    <h1 id="question">ئایە رازیت لەگەڵ من بیت؟ ❤️🙂</h1>
-
-    <div class="btn-container">
-        <button id="yesBtn" onclick="agreed()">بەڵێ🥰</button>
-        <button id="noBtn" onmouseover="runAway()">نەخێر😭</button>
-    </div>
-.btn-container{
-    display:flex;
-    justify-content:center;
-    gap:120px;
-    margin-top:20px;
-}
-
-button:hover{
-    transform:scale(1.15);
-}
-
-img{
-    box-shadow:0 0 20px rgba(255,255,255,0.4);
-}
-
-@keyframes pulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.05);}
-    100%{transform:scale(1);}
-}
-
-.container{
-    animation:pulse 2s infinite;
-}
-</div>
 .container {
     text-align: center;
     background: rgba(131, 53, 92, 0.9);
@@ -98,10 +64,10 @@ button {
 <body>
 
     <div class="container">
-        <h1 id="question">❤️🙂!ئایە رازیت لەگەڵ هيوا بیت</h1>
+        <h1 id="question">هدی من خۆش ئەوەێ!🙃</h1>
         <div class="btn-container">
-            <button id="yesBtn" onclick="agreed()">🥰بەڵێ</button>
-            <button id="noBtn" onmouseover="runAway()" onclick="runAway()">😭نەخێر</button>
+            <button id="yesBtn" onclick="agreed()">بەڵێ🥰</button>
+            <button id="noBtn" onmouseover="runAway()" onclick="runAway()">نەخێر😭</button>
         </div>
     </div>
 
@@ -120,12 +86,11 @@ button {
         }
 
         function agreed() {
-            document.getElementById('question').innerText = "🥰✨ئاوا بە قسەی خۆش ";
+            document.getElementById('question').innerText = "ئاوا بە قسەی خۆش 🥰✨";
             document.getElementById('yesBtn').style.display = 'none';
             document.getElementById('noBtn').style.display = 'none';
         }
     </script>
 
-    
 </body>
 </html>
